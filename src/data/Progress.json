@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "name": "Serhan Yılmaz",
+    "sendType": "Uluslararası",
+    "date": "18 Şubat 2023 / 14:24",
+    "money": "- £100.00",
+    "icon": "web"
+  },
+  {
+    "id": 2,
+    "name": "Emin Can Yılmaz",
+    "sendType": "Yerel",
+    "date": "18 Şubat 2023 / 14:24",
+    "money": "+ £15,000.00",
+    "icon": "home-export-outline"
+  },
+  {
+    "id": 3,
+    "name": "Serhan Yılmaz",
+    "sendType": "Para Yükleme",
+    "date": "18 Şubat 2023 / 14:24",
+    "money": "- £100.00",
+    "icon": "credit-card-check-outline"
+  }
+]

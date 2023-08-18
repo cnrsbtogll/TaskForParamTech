@@ -8,8 +8,13 @@ import AccountInfo from '../components/ui/AccountInfo';
 
 import IonIcon from 'react-native-vector-icons/Ionicons';
 import MoneyButtons from '../components/ui/MoneyButtons';
+import Progress from '../components/ui/Progress';
 
 export default function Home() {
+    
+  // Boş halini görmek için false yapın.
+  const lastProgress = true;
+
   return (
     <View style={{flex: 1}}>
       {
@@ -18,7 +23,7 @@ export default function Home() {
       <LinearGradient
         colors={['#220C45', '#440E85']}
         angle={180}
-        style={{flex: 5.5}}>
+        style={styles.topContainer}>
         <View style={styles.container}>
           <Header />
           <Balance balance="£19,600.75" />
@@ -53,7 +58,16 @@ export default function Home() {
       {
         //Home Bottom
       }
-      <View style={{flex: 6}}></View>
+      <View style={styles.bottomContainer}>
+        <View style={styles.bottomTitle}>
+          <Text>Son Hareketler</Text>
+          {lastProgress && (
+            <Text style={styles.bottomTitleTextRight}>{'Tümü>>'}</Text>
+          )}
+        </View>
+
+        <Progress empty={lastProgress} />
+      </View>
     </View>
   );
 }
@@ -63,5 +77,23 @@ const styles = StyleSheet.create({
     display: 'flex',
     flexDirection: 'column',
     top: 50,
+  },
+
+  topContainer: {flex: 5.5},
+  bottomContainer: {
+    flex: 6,
+    display: 'flex',
+    alignItems: 'center',
+    alignContent: 'center',
+    paddingHorizontal: 20,
+    top: 30,
+  },
+  bottomTitle: {
+    width: '100%',
+    display: 'flex',
+    flexDirection: 'row',
+  },
+  bottomTitleTextRight: {
+    marginLeft: 'auto',
   },
 });
