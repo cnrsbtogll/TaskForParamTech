@@ -41,7 +41,13 @@ export default function Progress({
       {!empty && (
         <View style={styles.empty}>
           <MicIcon name="image-minus" size={50} color={'#AAB5C170'} />
-          <Text style={{color: '#AAB5C1', maxWidth: 120, textAlign: 'center'}}>
+          <Text
+            style={{
+              color: '#AAB5C1',
+              maxWidth: 120,
+              textAlign: 'center',
+              fontFamily: 'Mark Pro',
+            }}>
             Son hareketin bulunmuyor.
           </Text>
         </View>
@@ -112,12 +118,13 @@ const styles = StyleSheet.create({
 
   flatListInfo: {display: 'flex', flexDirection: 'column'},
   flatListInfoName: {
-    fontWeight: '700',
+    fontWeight: '600',
+    fontFamily: 'Mark Pro',
   },
   flatListInfoMiniText: {
     fontSize: 12,
+    fontFamily: 'Mark Pro',
   },
-
   empty: {
     width: 320,
     height: 300,

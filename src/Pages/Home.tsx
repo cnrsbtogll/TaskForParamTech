@@ -11,7 +11,6 @@ import MoneyButtons from '../components/ui/MoneyButtons';
 import Progress from '../components/ui/Progress';
 
 export default function Home() {
-    
   // Boş halini görmek için false yapın.
   const lastProgress = true;
 
@@ -60,7 +59,7 @@ export default function Home() {
       }
       <View style={styles.bottomContainer}>
         <View style={styles.bottomTitle}>
-          <Text>Son Hareketler</Text>
+          <Text style={{fontFamily: 'Mark Pro'}}>Son Hareketler</Text>
           {lastProgress && (
             <Text style={styles.bottomTitleTextRight}>{'Tümü>>'}</Text>
           )}
@@ -92,8 +91,10 @@ const styles = StyleSheet.create({
     width: '100%',
     display: 'flex',
     flexDirection: 'row',
+    fontFamily: 'Mark Pro',
   },
   bottomTitleTextRight: {
     marginLeft: 'auto',
+    fontFamily: 'Mark Pro',
   },
 });

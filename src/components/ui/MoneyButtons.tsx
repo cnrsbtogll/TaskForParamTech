@@ -21,7 +21,13 @@ export default function MoneyButtons() {
       />
       <Button
         text="Para Yükle"
-        icon={<MicIcon name="credit-card-refund-outline" size={35} color={'#ffffff95'} />}
+        icon={
+          <MicIcon
+            name="credit-card-refund-outline"
+            size={35}
+            color={'#ffffff95'}
+          />
+        }
       />
     </View>
   );
@@ -59,9 +65,11 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     alignItems: 'center',
     gap: 5,
+    fontFamily: 'Mark Pro',
   },
   buttonText: {
     color: '#ffffff95',
-    fontSize:16
+    fontSize: 16,
+    fontFamily: 'Mark Pro',
   },
 });

@@ -37,6 +37,7 @@ const styles = StyleSheet.create({
   },
   leftText: {
     color: '#fff',
+    fontFamily: 'Mark Pro',
   },
   rightContainer: {
     display: 'flex',
@@ -47,5 +48,6 @@ const styles = StyleSheet.create({
   },
   rightText: {
     color: '#fff',
+    fontFamily: 'Mark Pro',
   },
 });

@@ -24,10 +24,12 @@ const styles = StyleSheet.create({
     fontSize: 10,
     color: '#fff',
     lineHeight: 13,
+    fontFamily: 'Mark Pro',
   },
   textMoney: {
     fontSize: 32,
     color: '#fff',
     lineHeight: 40,
+    fontFamily: 'Mark Pro',
   },
 });
